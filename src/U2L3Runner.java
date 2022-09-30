@@ -8,5 +8,11 @@ public class U2L3Runner {
         George.greeting();
         System.out.println("What would you like to do?");
         System.out.println("You can:");
+        System.out.println("Press w for weather");
+        String letterTyped = myObj.nextLine();
+        if (letterTyped.equals ("w") ){
+            George.weather();
+        }
+        George.help();
     }
 }
